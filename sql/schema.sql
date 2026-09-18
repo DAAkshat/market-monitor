@@ -1,0 +1,11 @@
+create database market_monitor;
+use market_monitor;
+drop table price_history;
+create table if not exists price_history(date DATE, ticker varchar(20), close_price DECIMAL(12,4), primary key (date,ticker));
+drop table ticker_sectors;
+create table if not exists ticker_sectors(ticker varchar(20),sector varchar(50), primary key(ticker));
+use market_monitor;
+show tables;
+select * from price_history limit 10;
+select count(*) from price_history;
+select * from ticker_sectors;

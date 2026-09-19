@@ -38,3 +38,10 @@ Python (pandas, yfinance) · MySQL · Power BI (DAX)
 Sector labels can be misleading across markets — two "Energy" stocks (XOM, US and
 RELIANCE.NS, India) showed a correlation of roughly -0.23, meaning grouping by GICS
 sector alone doesn't guarantee similar market behavior.
+
+
+## AI-Generated Market Commentary
+
+   The pipeline uses Google's Gemini API to auto-generate a natural-language market
+   brief from the computed metrics (sector rankings, regime status) — bridging
+   traditional quantitative analysis with an LLM-based narrative layer.
